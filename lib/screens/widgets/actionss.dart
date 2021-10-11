@@ -36,12 +36,15 @@ class MyActions extends StatelessWidget {
 
       color: CustomColors.clayEbonyDark,
       // height: ,
-      child: Wrap(
-        alignment: WrapAlignment.center,
+      child: GridView.count(
+        childAspectRatio: 2.4,
+        // shrinkWrap: true,
+        crossAxisCount: 2,
+        // alignment: WrapAlignment.center,
         children: actionsModel
             .map(
               (e) => Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(6.0),
                 child: Stack(
                   children: [
                     Container(
@@ -134,11 +137,11 @@ class MyActions extends StatelessWidget {
                 Image.asset('images/one.png'),
                 Positioned(
                   left: 13,
-                  child: FittedBox(child: Image.asset('images/two.png')),
+                  child: Image.asset('images/two.png'),
                 ),
                 Positioned(
                   left: 28,
-                  child: FittedBox(child: Image.asset('images/three.png')),
+                  child: Image.asset('images/three.png'),
                 )
               ],
             ),

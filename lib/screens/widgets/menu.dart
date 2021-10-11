@@ -176,7 +176,7 @@ class _MenuState extends State<Menu> {
           SizedBox(
             height: 8,
           ),
-          MyActions()
+          Expanded(child: MyActions())
         ],
       ),
     );
